@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_1"
+    tools:context=".MainActivity">
+
+    <!--获取系统时间日期-->
+    <TextView
+        android:id="@+id/system_AutoTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/txt_10sp"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/txt_8sp"
+        android:textColor="@color/white"
+        android:text="2019-1-6"
+        />
+
+    <!--呼叫机修-->
+    <LinearLayout
+        android:id="@+id/ll_Call_Mechanic"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/main_3"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/aa_call_mechanic"
+            android:contentDescription="@string/Desc" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_10sp"
+            android:text="@string/main_Call_Mechanic"/>
+
+    </LinearLayout>
+
+    <!--品质-->
+    <LinearLayout
+        android:id="@+id/ll_Quality"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/ll_Call_Mechanic"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/main_3"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/aa_quality"
+            android:contentDescription="@string/Desc" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_10sp"
+            android:text="@string/main_Quality"/>
+    </LinearLayout>
+
+    <!--设置-->
+    <LinearLayout
+        android:id="@+id/ll_Setting"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/ll_Quality"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/main_3"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/aa_setting"
+            android:contentDescription="@string/Desc" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_10sp"
+            android:text="@string/main_Setting"/>
+    </LinearLayout>
+
+    <!--SOP-->
+    <LinearLayout
+        android:id="@+id/ll_SOP"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/ll_Setting"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/main_3"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/aa_sop"
+            android:contentDescription="@string/Desc" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/main_SOP"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_10sp" />
+    </LinearLayout>
+
+    <!--退出-->
+    <LinearLayout
+        android:id="@+id/btn_Exit"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/ll_SOP"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/main_3"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/aa_exit"
+            android:contentDescription="@string/Desc" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_10sp"
+            android:text="@string/main_Exit"/>
+    </LinearLayout>
+
+    <!--信息面板-->
+    <LinearLayout
+        android:id="@+id/left_main"
+        android:layout_width="204dp"
+        android:layout_height="230dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/ll_Call_Mechanic"
+        android:layout_marginStart="104dp"
+        android:background="@color/main_2"
+        android:orientation="vertical">
+
+
+        <!--工作信息-->
+        <LinearLayout
+            android:id="@+id/ll_worker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_3"
+            android:orientation="vertical">
+
+            <include layout="@layout/activity_worker_informartion"/>
+
+        </LinearLayout>
+
+
+
+        <!--生产信息-->
+        <LinearLayout
+            android:id="@+id/ll_production"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_3"
+            android:orientation="vertical">
+
+            <include layout="@layout/activity_main_produaction_information"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--数据统计-->
+    <RelativeLayout
+        android:id="@+id/right_main"
+        android:layout_width="256dp"
+        android:layout_height="290dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/ll_Call_Mechanic"
+        android:layout_marginEnd="12dp"
+        android:background="@color/main_2">
+
+        <include layout="@layout/activity_Productivity_Statistics"/>
+
+
+    </RelativeLayout>
+
+    <!--尺码面板-->
+    <RelativeLayout
+        android:layout_width="204dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/left_main"
+        android:layout_alignTop="@+id/btn_Exit"
+        android:background="@color/main_2">
+
+    </RelativeLayout>
+
+</RelativeLayout>

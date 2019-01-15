@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">MES</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="Desc">警告消失</string>
+
+    <!--‘t’主界面字段-->
+    <!--主界面-->
+    <string name="main_Call_Mechanic">呼叫机修</string>
+    <string name="main_Quality">品质</string>
+    <string name="main_Setting">设置</string>
+    <string name="main_SOP">SOP</string>
+    <string name="main_Exit">退出</string>
+    <!--工作信息-->
+    <string name="worker_information">工作信息</string>
+    <string name="t_Name">姓名：</string>
+    <string name="t_ID">编号：</string>
+    <string name="t_Position">位置：</string>
+    <string name="t_Line">产线：</string>
+    <string name="t_Factory">工厂：</string>
+        
+    <!--生产信息-->
+    <string name="production_information">生产信息</string>
+    <string name="t2_Style">款式：</string>
+    <string name="t2_PO">国家：</string>
+    <string name="t2_EEF">效率目标：</string>
+    <string name="t2_Output">产能目标：</string>
+    <string name="t2_SMV">SMV：</string>
+    <string name="t2_Total">数量：</string>
+
+    <!--生产力统计-->
+    <string name="Productivity_Statistics">生产力统计</string>
+    <string name="t3_Station">站点</string>
+    <string name="t3_Line_qty">产线</string>
+    <string name="t3_Hourly">小时</string>
+    <string name="t3_Total">数量</string>
+    <string name="t3_Output">产出：</string>
+    <string name="t3_EFF">效率：</string>
+    <string name="t3_0">0</string>
+    <string name="t3_00">0%</string>
+
+    <!--呼叫机修菜单-->
+</resources>
